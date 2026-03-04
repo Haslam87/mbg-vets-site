@@ -1,20 +1,22 @@
 import { ArrowRight, Cat, Tractor, TriangleRight } from "lucide-react"
 
-import equineImg from "../../assets/equine.png"
+import equineImg from "../../assets/equine2.jpg"
+import petsImg from "../../assets/small-pets.jpg"
+import farmImg from "../../assets/farm.jpg"
 
 const SERVICES = [
     {
         id: "small-animal",
         title: "Small Animal",
         audience: "For your pets",
-        image: "https://images.unsplash.com/photo-1576201836106-db1758fd1c97?q=80&w=1470&auto=format&fit=crop",
+        image: petsImg,
         needs: ["Routine checks & vaccinations", "Complex diagnostics", "Preventative care plans"]
     },
     {
         id: "farm",
         title: "Farm",
         audience: "For agricultural needs",
-        image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?q=80&w=1473&auto=format&fit=crop",
+        image: farmImg,
         needs: ["Herd health planning", "Emergency call-outs", "Routine fertility work"]
     },
     {

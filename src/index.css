@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@theme {
+  --color-mgb-primary: #1F3B2D;
+  --color-mgb-secondary: #22303A;
+  --color-mgb-accent: #C9A84C;
+  --color-mgb-background: #F6F3EC;
+  --color-mgb-surface: #FFFCF6;
+  --color-mgb-text: #22303A;
+  
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+@layer base {
+  :root {
+    --background: #F6F3EC; /* warm stone */
+    --foreground: #22303A; /* slate */
+    
+    --primary: #1F3B2D; /* deep green */
+    --primary-foreground: #FFFCF6;
+    
+    --secondary: #22303A;
+    --secondary-foreground: #FFFCF6;
+    
+    --accent: #C9A84C; /* heritage gold */
+    --accent-foreground: #1F3B2D;
+    
+    --surface: #FFFCF6; /* ivory */
+    --surface-foreground: #22303A;
+    
+    --radius: 1rem; /* rounded-2xl base */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-mgb-secondary/10;
+  }
+  
+  body {
+    @apply bg-mgb-background text-mgb-text font-body antialiased selection:bg-mgb-accent/30 selection:text-mgb-primary overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .glass-panel {
+    @apply bg-mgb-surface/80 backdrop-blur-md border border-white/20 shadow-sm;
+  }
+}

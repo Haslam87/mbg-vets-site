@@ -9,7 +9,7 @@ export default function Footer() {
                 {/* Brand Column */}
                 <div>
                     <h2 className="text-2xl font-heading font-semibold mb-6 flex items-baseline gap-1">
-                        MGB<span className="text-mgb-accent">.</span>
+                        MBG<span className="text-mgb-accent">.</span>
                     </h2>
                     <p className="text-white/70 text-sm mb-6 max-w-xs leading-relaxed">
                         Independent veterinary care across Worcestershire. Four practices. One standard of care.
@@ -73,7 +73,7 @@ export default function Footer() {
                         </li>
                         <li>
                             <Link to="/#about" className="text-white/70 hover:text-white transition-colors text-sm">
-                                About MGB
+                                About MBG
                             </Link>
                         </li>
                     </ul>
@@ -83,7 +83,7 @@ export default function Footer() {
 
             {/* Bottom Bar */}
             <div className="max-w-7xl mx-auto pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-white/50">
-                <p>&copy; {new Date().getFullYear()} MGB Veterinary Group. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} MBG Veterinary Group. All rights reserved.</p>
                 <div className="flex items-center gap-6">
                     <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
                     <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>

@@ -67,7 +67,7 @@ export default function LocationPage() {
                             <div className="absolute top-0 right-0 w-32 h-32 bg-mgb-accent/10 rounded-full blur-2xl" />
                             <h2 className="text-2xl font-heading text-mgb-primary mb-6">About {locationInfo.town}</h2>
                             <p className="text-mgb-text/80 leading-relaxed mb-6">
-                                Our {locationInfo.name} branch stands as a cornerstone of the MGB Veterinary Group. Fully equipped with modern diagnostic suites, dedicated surgical theatres, and separate hospitalisation wards to minimize stress for your animals.
+                                Our {locationInfo.name} branch stands as a cornerstone of the MBG Veterinary Group. Fully equipped with modern diagnostic suites, dedicated surgical theatres, and separate hospitalisation wards to minimize stress for your animals.
                             </p>
                             <p className="text-mgb-text/80 leading-relaxed">
                                 Whether bringing a new puppy for their first health check or managing complex chronic conditions in older pets, our established clinical team guarantees continuity of care and familiar, reassuring faces upon every visit.

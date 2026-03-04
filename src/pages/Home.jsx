@@ -1,4 +1,5 @@
 import Hero from "../components/home/Hero"
+import QuickActions from "../components/home/QuickActions"
 import LocationSelector from "../components/home/LocationSelector"
 import Services from "../components/home/Services"
 
@@ -9,6 +10,7 @@ export default function Home() {
     return (
         <>
             <Hero />
+            <QuickActions />
             <LocationSelector />
             <Services />
 

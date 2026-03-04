@@ -12,6 +12,9 @@ export default function Navbar() {
     const navRef = useRef(null)
     const { selectedLocation } = useLocationContext()
 
+    const location = useLocation()
+    const isLocationPage = location.pathname.startsWith('/locations')
+
     const [isScrolled, setIsScrolled] = useState(false)
 
     useEffect(() => {
@@ -32,7 +35,7 @@ export default function Navbar() {
             ref={navRef}
             className={cn(
                 "fixed top-0 left-0 right-0 z-50 transition-all duration-300 flex flex-col",
-                isScrolled ? "bg-mgb-primary shadow-md border-b border-white/10" : "bg-transparent border-b border-transparent"
+                isScrolled || isLocationPage ? "bg-mgb-primary shadow-md border-b border-white/10" : "bg-transparent border-b border-transparent"
             )}
         >
             {/* Integrated Emergency Strip */}
@@ -48,7 +51,7 @@ export default function Navbar() {
                 {/* Brand */}
                 <div className="flex justify-start">
                     <Link to="/" className="text-xl md:text-2xl font-heading font-semibold text-white tracking-tight">
-                        MGB<span className="text-mgb-accent">.</span>
+                        MBG<span className="text-mgb-accent">.</span>
                     </Link>
                 </div>
 

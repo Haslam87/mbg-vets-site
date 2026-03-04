@@ -8,4 +8,9 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
+  server: {
+    host: true, // Listen on all local IPs
+    port: 5173,
+    open: true
+  }
 })

@@ -1,5 +1,7 @@
 import { ArrowRight, Cat, Tractor, TriangleRight } from "lucide-react"
 
+import equineImg from "../../assets/equine.png"
+
 const SERVICES = [
     {
         id: "small-animal",
@@ -18,8 +20,8 @@ const SERVICES = [
     {
         id: "equine",
         title: "Equine",
-        audience: "For horses & ponies",
-        image: "https://images.unsplash.com/photo-1595085610896-bc3413eb4d8e?q=80&w=1470&auto=format&fit=crop",
+        audience: "For horses & donkeys",
+        image: equineImg,
         needs: ["Vettings & pre-purchase", "Lameness investigations", "Routine dental care"]
     }
 ]
